@@ -35,7 +35,6 @@ Jugador1 / Puntaje total: 47
 ***********************************************
  */
 
-
  package ui;
 
  import java.util.Scanner;
@@ -131,9 +130,9 @@ Jugador1 / Puntaje total: 47
 				 int puntaje;
 				 boolean valido = false;
 				 while (!valido) {
-					 System.out.println("----------");
+					 System.out.println("-");
 					 System.out.println("Ingrese el puntaje de " + "Jugador" + (i + 1) + " en la ronda " + (j + 1) + " (0 - 100)");
-					 System.out.println("----------");
+					 System.out.println("-");
 					 puntaje = escaner.nextInt();
 			 if (puntaje >= 0 && puntaje <= 100 ) {
 				 valido = true; 
@@ -150,9 +149,9 @@ Jugador1 / Puntaje total: 47
 	  * @param puntajes arreglo del  puntaje de los jugadores 
 	  */
 	  public void mostrarResultados(String[] jugadores, int[] puntajes) {
-		       System.out.println("------------------");
+		       System.out.println("-");
 		      System.out.println("Resultados finales");
-		       System.out.println("------------------");
+		       System.out.println("-");
 		        for (int i = 0; i < jugadores.length; i++) {
 		            System.out.println(jugadores[i] + " / Puntaje total: " + puntajes[i]); 
 		        }
